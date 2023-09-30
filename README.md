@@ -5,4 +5,4 @@
 * main.py — реализация API с помощью FastAPI.*
 
 * для запуска Fast API команда uvicorn main:app --reload *
-* запрос на ппредсказание делаем в Postman *
+* запрос на предсказание делаем в Postman *
