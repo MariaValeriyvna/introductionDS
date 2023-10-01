@@ -17,7 +17,7 @@ import numpy as np
 
 def categorical_emissions(data):
     copy_data = data.copy()
-    for name, column in copy_data.iteritems():
+    for name, column in copy_data.items():
         seria = column.value_counts() / column.value_counts().sum() * 100
         keep_cat = seria[seria > 5].index
         copy_data[name] = np.where(column.isin(keep_cat), column, 'other')
